@@ -1,4 +1,405 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Box con Fondo Negro</title>  
+    <style>  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('https://wallpapercave.com/wp/VVD9EOQ.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-color: #000000; 
+            color: white; 
+            padding: 270px;
+            text-align: center;
+            height: 200px; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 3em; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            
+        }
+        header p {
+            font-size: 1.2em; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        h2 {
+            color: #ff4500;
+            position: absolute;
+            top: 10px; /* 10px desde la parte superior */  
+            left: 20px; /* 20px desde la izquierda */  
+            margin: 0; /* Eliminar margen por defecto */  
+            padding-bottom: 10px; /* Añadir algo de espacio debajo */ 
+        }
+        h3 {
+            color: #ff4500;
+            font-size: 24px;
+            margin-top: 0; /* Eliminar el margen superior */  
+            margin-bottom: 10px; /* Añadir espacio debajo */  
+            padding-bottom: 5px; /* Espacio adicional en la parte inferior */  
+            border-bottom: 2px solid #ff4500; /* Línea inferior para el h3 */  
+        
+        }
+        h4 {
+            color: #ff4500;
+            font-size: 24px;
+        
+        }
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+        }
+        footer p {
+            color: #aaaaaa;
+        }
+
+        .box {  
+    background-color: #222222; /* Fondo del box */  
+    color: #ffffff; /* Color del texto en blanco para que sea legible */  
+    padding: 20px; /* Espacio interno del box */  
+    margin: 20px auto; /* Margen superior/inferior y centrado horizontalmente */  
+    width: 80%; /* Ancho relativo del box */  
+    height: auto; /* Altura automática para que se ajuste al contenido */  
+    border: 1px solid #ffffff; /* Bordes en blanco para mayor visualización */  
+    border-radius: 8px; /* Bordes redondeados */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mayor profundidad */  
+    box-sizing: border-box; /* Ajusta cómo se calculan el ancho y la altura */  
+    position: relative; /* Posicionamiento relativo */  
+    overflow: hidden; /* Para ocultar elementos flotantes si los hay */ 
+}
+    </style>  
+</head>  
+<body> 
+    <header>
+        <h1></h1>
+    </header>
+    
+    <div class="box">   
+            <h2>Introducción</h2>   
+            <p>La saga de Resident Evil es conocida por sus juegos de survival horror,   
+                donde los jugadores enfrentan una lucha constante contra criaturas mutadas por virus,   
+                mientras exploran conspiraciones relacionadas con corporaciones como Umbrella.</p>   
+            <p>A lo largo de los títulos principales, desde el Resident Evil 1 hasta el 6,   
+                la trama se ha ido desarrollando con complejas historias sobre virus,   
+                armas biológicas y figuras clave que encarnan tanto la esperanza como la amenaza.</p>  
+            <p>Desde la mansión Spencer hasta las calles devastadas de Raccoon City,   
+                la historia nos lleva a través de un mundo plagado de horrores, donde la supervivencia depende de la astucia,   
+                la valentía y la capacidad de enfrentarse a lo desconocido. Los virus, como el T-Virus y el G-Virus,   
+                han transformado a la humanidad en criaturas grotescas, mientras que armas biológicas como los Tyrant,   
+                Nemesis y Mr. X se han convertido en símbolos del terror que acecha en las sombras.</p>  
+            <p>En medio de este caos, personajes icónicos como Chris Redfield, Jill Valentine, Leon S. Kennedy y Claire Redfield   
+                luchan por desentrañar las conspiraciones que amenazan la seguridad del mundo.</p>  
+    </div>
+
+    <div class="box">  
+        <h3>Resident Evil 1</h3>  
+        <img src="https://generacionxbox.com/wp-content/uploads/2024/06/resident-evil-1-generacion-xbox-2024-scaled.jpg" height="300" width="375">  
+        
+        <p class="visible">El equipo S.T.A.R.S. (Special Tactics and Rescue Service) de la policía de Raccoon City   
+            investiga una serie de brutales asesinatos en las afueras de la ciudad. El equipo Bravo,   
+            liderado por el capitán Enrico Marini, es enviado a la escena del crimen, pero desaparece sin dejar rastro.</p>   
+        
+        <p class="visible">El equipo Alpha, liderado por el capitán <a href="#Albert Wesker">Albert Wesker</a>, es enviado a buscar al equipo Bravo.  
+            Al llegar a la zona, el equipo Alpha es atacado por perros zombis mientras escapaban  
+            se encuentran con una mansión aislada en las montañas,   
+            la mansión Spencer y descubren que la mansión está   
+            llena de criaturas mutadas y zombis. Mientras exploran la mansión, los miembros del equipo Alpha   
+            se dan cuenta de que la mansión está relacionada con la corporación <a href="#Umbrella">Umbrella</a>,   
+            una empresa farmacéutica que ha estado experimentando con virus y armas biológicas.</p>  
+        
+        <p class="invisible">Durante su exploración, el equipo Alpha se enfrenta a una variedad de criaturas mutadas, incluyendo los   
+            zombis, los Hunters y el Tyrant, una poderosa criatura creada por Umbrella. Los sobrevivientes del equipo,   
+            Chris Redfield, Jill Valentine y Barry Burton, descubren que el virus T se ha liberado en la mansión.</p>  
+            
+        <p class="visible">Mientras luchan por sobrevivir, Chris, Jill y Barry descubren que Albert Wesker era un agente doble que   
+            trabajaba para Umbrella. Después de una serie de enfrentamientos y descubrimientos,   
+            los tres logran escapar de la mansión, pero se dan cuenta de que la amenaza de Umbrella es mucho más grande   
+            de lo que pensaban. El virus T se ha extendido por Raccoon City, y la ciudad está en peligro.</p>  
+        
+        <p class="visible">El juego termina con los sobrevivientes, Chris, Jill y Barry, preparándose para enfrentarse a Umbrella  
+            y detener sus experimentos con virus y armas biológicas.</p>  
+    </div>  
+    
+    <div class="box">  
+        <h3>Resident Evil 2</h3>  
+        <img src="https://wallpaper.dog/large/10745417.jpg" height="300" width="375">  
+    
+        <p>Resident Evil 2 comienza con la ciudad de Raccoon City en caos. El virus T se ha propagado,   
+            transformando a la mayoría de la población en zombis.</p>  
+    
+        <p>Leon S. Kennedy, un oficial de policía novato, y Claire Redfield, una joven que busca a su hermano Chris,   
+            se encuentran atrapados en la ciudad.</p>  
+    
+        <p>Leon y Claire se separan al principio, pero ambos se enfrentan al mismo horror: hordas de zombis,   
+            criaturas mutadas y la amenaza constante de la corporación Umbrella, responsable de la creación del virus T.</p>  
+        
+        <p>Mientras intentan escapar de la ciudad, Leon y Claire se encuentran con otros sobrevivientes,   
+            incluyendo a Ada Wong, una misteriosa mujer con sus propios motivos, y a Sherry Birkin,   
+            la hija de William Birkin, un científico de Umbrella que está trabajando en un nuevo virus aún más peligroso: el Virus G.  
+            William Birkin, a punto de ser asesinado,   
+            se inyecta el Virus G y se transforma en una monstruosa criatura.</p>  
+        
+        <p>Leon y Claire deben enfrentarse a Birkin en varias ocasiones, mientras intentan escapar de la ciudad y detener la propagación del Virus G.</p>  
+        
+        <p>Durante su escape, Leon y Claire se enfrentan a otros peligros,   
+            incluyendo a Mr. X, un Tyrant que persigue a Leon sin descanso,   
+            y a los zombis infectados por el virus G, que son aún más peligrosos que los zombis normales.</p>  
+        
+        <p>Finalmente, Leon y Claire logran escapar de Raccoon City,   
+            pero no antes de presenciar la destrucción total de la ciudad.   
+            La historia de Resident Evil 2 deja claro que la amenaza de Umbrella   
+            no ha terminado y que el mundo aún está en peligro.</p>  
+    </div>
+
+    <div class="box">  
+        <h3>Resident Evil 3</h3>  
+        <img src="https://images.wallpapersden.com/image/download/resident-evil-3-remake-characters_a21mammUmZqaraWkpJRnamtlrWZpaWU.jpg" height="260" width="400">  
+    
+        <p>La ciudad de Raccoon City está siendo devastada por el virus T, Jill se entera de esto e inmediatamente   
+            es perseguida por Nemesis desde su apartamento, una poderosa arma biológica creada por Umbrella   
+            para eliminar a los miembros supervivientes del equipo S.T.A.R.S.</p>  
+    
+        <p>Jill debe luchar para sobrevivir mientras intenta escapar de la ciudad, enfrentándose a hordas de zombis,   
+            criaturas mutadas y la amenaza constante de Nemesis. Mientras escapa, Jill se encuentra con Carlos Oliveira, un miembro de una unidad de fuerzas especiales   
+            de Umbrella que está tratando de controlar la epidemia.</p>   
+    
+        <p>Carlos y Jill trabajan juntos para encontrar una manera de escapar de la ciudad y detener la propagación del virus T. Sin embargo,   
+            su camino se cruza con Nikolai Zinoviev, un mercenario que se presenta como un aliado,   
+            pero que en realidad es un traidor que busca sacar provecho de la situación.</p>   
+    
+        <p>Nikolai, que trabaja para una organización rival de Umbrella, está interesado en obtener información   
+            sobre los experimentos de Umbrella y el virus T, y está dispuesto a manipular a Jill y Carlos para conseguirlo. Durante   
+            su escape, Jill y Carlos se enfrentan a una serie de peligros, incluyendo un ataque de zombis en el   
+            hospital de la ciudad, un encuentro con un grupo de Hunters, y una persecución por parte de Nemesis en las alcantarillas.</p>   
+    
+        <p>En este punto, Nikolai traiciona a Jill y Carlos, dejando a Jill a merced de Nemesis.</p>  
+    
+        <p>Jill descubre que Nemesis está siendo controlado por Umbrella, que está utilizando al monstruo como un   
+            arma para eliminar a todos los testigos de sus experimentos secretos.</p>  
+    
+        <p>Finalmente, Jill y Carlos logran escapar de Raccoon City, pero no antes de presenciar la destrucción total de la ciudad.</p>   
+    
+        <p>El gobierno de los Estados Unidos, con la ayuda de Umbrella, decide utilizar un ataque nuclear para destruir   
+            Raccoon City y contener la epidemia, dejando a Jill y Carlos como supervivientes de aquella catástrofe.</p>   
+    </div>
+
+    <div class="box">  
+        <h3>Resident Evil 4</h3>  
+        <img src="https://www.residentevildatabase.com/wp-content/uploads/2024/02/resident-evil-4-remake-gold-edition-art-1280x720-1.jpg" height="260" width="400">  
+        
+        <p>El agente del gobierno estadounidense Leon S. Kennedy es enviado a España a una misión para rescatar a Ashley Graham,   
+            la hija del presidente de los Estados Unidos, que ha sido secuestrada por una misteriosa secta llamada Los Illuminados.   
+            Leon llega a un pueblo rural y aislado de España, donde se encuentra con una horda de aldeanos hostiles   
+            que han sido infectados por un parásito que controla la mente llamado Las Plagas.</p>  
+    
+        <p>Leon es capturado por Bitores Mendez, después de la asamblea en el pueblo, quien lo inyecta con Las Plagas.   
+            Mientras lucha por sobrevivir, Leon se encuentra con Luis Sera, un ex policía de Madrid que también fue   
+            capturado por Los Illuminados. Juntos, escapan del pueblo y Leon descubre que Ashley está siendo retenida en una iglesia.</p>  
+    
+        <p>Después de rescatarla, Leon y Ashley se enfrentan a Osmund Saddler, el líder de Los Illuminados,   
+            quien revela su plan para usar el parásito que inyectaron en Ashley para manipularla y que inyecte   
+            al presidente de los Estados Unidos con una "muestra" de Las Plagas. Saddler planea usar esto para controlar   
+            al presidente y conquistar el mundo.</p>  
+    </div>
+
+    <div class="box">  
+        <h3>Los Virus Más Peligrosos</h3>  
+        <table>  
+            <thead>  
+                <tr>  
+                    <th>Virus</th>  
+                    <th>Descripción</th>  
+                    <th>Efectos</th>  
+                    <th>Apariciones</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>T-Virus</td>  
+                    <td>Un virus mutagénico que transforma a los humanos en zombis.</td>  
+                    <td>Transformación en zombis, mutaciones, aumento de la agresividad.</td>  
+                    <td>Resident Evil 1, 2, 3</td>  
+                </tr>  
+                <tr>  
+                    <td>G-Virus</td>  
+                    <td>Un virus aún más potente que el T-Virus, que puede fusionar seres vivos.</td>  
+                    <td>Fusión de seres vivos, mutaciones extremas, regeneración acelerada.</td>  
+                    <td>Resident Evil 2, 3</td>  
+                </tr>  
+                <tr>  
+                    <td>Las Plagas</td>  
+                    <td>Un parásito que controla la mente y transforma a los humanos en criaturas monstruosas.</td>  
+                    <td>Control mental, mutaciones, aumento de la fuerza y la resistencia.</td>  
+                    <td>Resident Evil 4, 5</td>  
+                </tr>  
+                <tr>  
+                    <td>Uroboros Virus</td>  
+                    <td>Un virus creado por Albert Wesker, que busca la perfección humana a través de la evolución.</td>  
+                    <td>Mutaciones extremas, habilidades sobrehumanas, regeneración acelerada.</td>  
+                    <td>Resident Evil 5</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>
+
+    <div class="box">  
+        <h3>Las Armas Biológicas (BOWs)</h3>  
+        <p>Las Armas Biológicas (BOWs) son criaturas creadas por Umbrella y otras organizaciones para ser utilizadas en guerra. Estas criaturas son mutantes que a menudo resultan de la infección por virus, y su poder destructivo es impresionante. Algunos de los BOWs más conocidos son:</p>  
+        <ul>  
+            <li>  
+                <h3>Tyrant</h3>  
+                <p>El Tyrant es uno de los primeros BOWs creados por Umbrella. Es una criatura de tamaño masivo con una fuerza increíble y resistencia. Son las armas biológicas más emblemáticas de la saga.</p>  
+                <ul>  
+                    <li><strong>Características:</strong> Gran tamaño, fuerza sobrehumana, casi invulnerable.</li>  
+                    <li><strong>Debilidad:</strong> Vulnerable a armamento pesado, pero requiere disparos precisos a ciertos puntos débiles.</li>  
+                </ul>  
+            </li>  
+            <li>  
+                <h3>Mr. X</h3>  
+                <p>Mr. X, o "Tyrant Tipo T-00", es un BOW que aparece en Resident Evil 2. Es un prototipo de Tyrant, mucho más móvil y capaz de perseguir a los protagonistas a lo largo de los escenarios.</p>  
+                <ul>  
+                    <li><strong>Características:</strong> Alta resistencia, fuerza física y velocidad mejorada.</li>  
+                    <li><strong>Debilidad:</strong> Vulnerable a armas de alta potencia, pero puede resistir mucho daño.</li>  
+                </ul>  
+            </li>  
+            <li>  
+                <h3>Nemesis</h3>  
+                <p>Nemesis es una de las armas biológicas más conocidas, apareciendo en Resident Evil 3. Es un prototipo de Tyrant creado para ser una versión mejorada, con inteligencia y la habilidad de usar armas.</p>  
+                <ul>  
+                    <li><strong>Características:</strong> Alta regeneración, resistencia a balas, puede usar armas como cohetes.</li>  
+                    <li><strong>Debilidad:</strong> Aunque es resistente, puede ser derrotado con suficiente poder de fuego.</li>  
+                </ul>  
+            </li>  
+            <li>  
+                <h3>Hunter</h3>  
+                <p>Los Hunters son criaturas mutadas de tamaño humano que fueron creadas para ser usadas como armas biológicas. Son rápidos, ágiles y tienen una capacidad de lucha feroz.</p>  
+                <ul>  
+                    <li><strong>Características:</strong> Agilidad extrema, capacidad de salto, piel resistente.</li>  
+                    <li><strong>Debilidad:</strong> Vulnerables a ataques en áreas no protegidas, como la cabeza o la parte trasera.</li>  
+                </ul>  
+            </li>  
+        </ul>  
+    </div>
+
+    <div class="box">  
+        <h3 id="Albert Wesker">Albert Wesker</h3>  
+        <p>Es el antagonista principal de la saga, conocido por su inteligencia, ambición y habilidades sobrehumanas.</p>  
+        <p>Inicialmente, fue un miembro respetado del equipo S.T.A.R.S. de la policía de Raccoon City,   
+        pero su verdadera lealtad siempre fue a sus propios objetivos.</p>  
+        <p>Wesker fue uno de los primeros sujetos de prueba del virus Progenitor,   
+        un virus ancestral que le otorgó habilidades sobrehumanas.   
+        Esta experiencia lo llevó a creer que la humanidad estaba limitada por su propia naturaleza   
+        y que la bioingeniería era la clave para la evolución humana.</p>  
+        <p>Se dio cuenta de que Umbrella estaba utilizando sus experimentos para fines egoístas   
+            y decidió que podía lograr sus objetivos de forma independiente.</p>  
+        <p>Traicionó a la compañía y comenzó a trabajar en secreto para alcanzar sus propias ambiciones.   
+        Wesker manipuló eventos para promover sus propios objetivos, incluyendo la liberación del virus T en Raccoon City  
+        y la creación de armas biológicas como el Tyrant.</p>  
+        <p>Se obsesionó con el poder y la búsqueda de la inmortalidad,   
+            utilizando cualquier medio necesario para alcanzar sus objetivos.   
+            Su ambición inquebrantable lo llevó a aspirar a controlar el mundo   
+            a través de la manipulación genética y la creación de un nuevo orden   
+            mundial basado en su propia visión.</p>  
+        <p>También buscaba alcanzar la inmortalidad a través de la manipulación genética   
+            y la mejora de su cuerpo.</p>  
+        <p>Wesker apareció por primera vez en Resident Evil   
+        (1996) como el líder del equipo S.T.A.R.S. Alpha. Murió en Resident Evil 5   
+        (2009) después de ser derrotado por Chris Redfield y Sheva Alomar, siendo   
+        arrojado a un volcán activo donde murió por las llamas y la lava.   
+        Su infección con una versión modificada del virus Progenitor le otorgó   
+        fuerza sobrehumana, velocidad mejorada, resistencia mejorada y un factor   
+        de curación acelerado, convirtiéndolo en un ser casi indestructible.</p>  
+        <p>Además de su fuerza física, Wesker era un genio científico y un estratega   
+        brillante, capaz de planear con anticipación y manipular eventos para lograr sus objetivos.   
+        Era un manipulador maestro, capaz de convencer a las personas para que hicieran lo que él quería,   
+        incluso si eso significaba traicionar sus propios intereses. Su historia es una de traición, ambición   
+        y la búsqueda del poder, convirtiéndolo en uno de los villanos más icónicos de la serie Resident Evil.</p>  
+        <p>Wesker es un personaje complejo y fascinante que ha tenido un impacto significativo en la historia  
+        de la serie Resident Evil. Su ambición, su inteligencia y sus habilidades sobrehumanas  
+        lo convierten en un oponente formidable para los héroes de la serie. Su historia es una  
+        de traición, ambición y la búsqueda del poder.</p>  
+        
+        <img src="https://static.wikia.nocookie.net/residentevil/images/3/31/Wesker_RE4R.png/revision/latest?cb=20230903164450&path-prefix=es" height="350" width="200">  
+    </div>
+
+    <div class="box">  
+        <h3 id="Umbrella">Umbrella</h3>  
+        <p>Es una empresa farmacéutica que ha estado involucrada en experimentos secretos con virus y armas biológicas,  
+            lo que ha tenido consecuencias devastadoras para el mundo.</p>   
+        <p>La corporación fue fundada por Ozwell E. Spencer, un científico brillante y ambicioso   
+            que tenía una visión de crear un nuevo orden mundial a través de la manipulación genética.</p>   
+        <p>Spencer creía que la humanidad estaba limitada por su propia naturaleza   
+            y que la bioingeniería era la clave para la evolución humana.   
+            Umbrella estableció laboratorios de investigación secretos en todo el mundo,   
+            incluyendo las montañas de Arklay en Estados Unidos, la isla de Sheena en África, y Raccoon City,   
+            también en Estados Unidos.</p>  
+        <p>Estos laboratorios estaban involucrados en la investigación y desarrollo de virus letales,   
+            armas biológicas y otros experimentos peligrosos.   
+            Umbrella se involucró en actividades ilegales y poco éticas para financiar sus investigaciones,   
+            incluyendo el tráfico de drogas, el lavado de dinero y la experimentación con humanos sin su consentimiento.</p>  
+        <p>La corporación también tenía una red de empleados corruptos que protegían sus secretos y ocultaban sus crímenes.   
+            El objetivo principal de Umbrella era obtener el poder y el control del mundo a través de la manipulación genética  
+             y la creación de armas biológicas.</p>   
+        <p>La corporación creía que podía utilizar su tecnología para crear un nuevo orden mundial  
+            basado en su propia visión, pero sus acciones tuvieron consecuencias devastadoras para la humanidad.   
+            La liberación del virus T en Raccoon City provocó una epidemia que transformó a la mayoría de la población   
+            en zombis y otras criaturas mutadas. La corporación también fue responsable de la creación de armas biológicas  
+            como el Tyrant, Nemesis, y Mr. X, que fueron diseñadas para ser utilizadas en la guerra.</p>  
+    
+        <img src="https://th.bing.com/th/id/OIP.JZIj6D313L_uIjUO2djVmwHaEo?rs=1&pid=ImgDetMain" height="300" width="400">  
+    </div>
+
+    <div class="box">  
+        <h3>Encuesta: Resident Evil 1 al 4</h3>  
+        <form action="#" method="post">  
+            <label for="favorite">¿Cuál es tu juego favorito?</label><br>  
+            <select id="favorite" name="favorite">  
+                <option value="re1">Resident Evil 1</option>  
+                <option value="re2">Resident Evil 2</option>  
+                <option value="re3">Resident Evil 3</option>  
+                <option value="re4">Resident Evil 4</option>  
+            </select><br><br>  
+    
+            <label for="character">Personaje favorito:</label><br>  
+            <input type="text" id="character" name="character" placeholder="Ej. Jill Valentine"><br><br>  
+    
+            <label for="rating">Califica la saga (1-10):</label><br>  
+            <input type="number" id="rating" name="rating" min="1" max="10"><br><br>  
+    
+            <input type="submit" value="Enviar">  
+        </form>  
+    </div>  
+
+    <footer>
+        <p>&copy; 2025 - Lore completo de Resident Evil</p>
+        <p><a href="mailto:joelsantos0815@gmail.com">joelsantos0815@gmail.com</a></p>
+    </footer>
+</body>  
+</html><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">

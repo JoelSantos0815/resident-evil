@@ -554,6 +554,21 @@
         </ul>  
     </div>
 
+    <div class="box">
+    <h3>Consola de Laboratorio: Análisis de Virus</h3>
+    
+    <label for="dose-input">Dosis del virus (mg):</label><br>
+    <input type="number" id="dose-input" min="0"><br><br>
+
+    <label for="time-input">Tiempo de exposición (horas):</label><br>
+    <input type="number" id="time-input" min="0"><br><br>
+
+    <button id="analyze-btn">Analizar Mutación</button>
+    <button id="simulate-btn">Simular Mutación Avanzada</button>
+
+    <div id="lab-results" class="hidden" style="margin-top: 20px;"></div>
+</div>
+
     <div class="box">  
         <h3 id="Albert Wesker">Albert Wesker</h3>  
         <p>Es el antagonista principal de la saga, conocido por su inteligencia, ambición y habilidades sobrehumanas.</p>  
@@ -643,7 +658,60 @@
     
             <input type="submit" value="Enviar">  
         </form>  
-    </div>  
+    </div>
+    <div class="box">
+    <h3>Gestión de Personajes (CRUD)</h3>
+    <form id="character-form">
+        <label for="char-name">Nombre:</label><br>
+        <input type="text" id="char-name" name="char-name" required><br><br>
+
+        <label for="char-game">Juego:</label><br>
+        <select id="char-game" name="char-game" required>
+            <option value="">Selecciona un juego</option>
+            <option value="re1">Resident Evil 1</option>
+            <option value="re2">Resident Evil 2</option>
+            <option value="re3">Resident Evil 3</option>
+            <option value="re4">Resident Evil 4</option>
+        </select><br><br>
+
+        <label for="char-type">Tipo:</label><br>
+        <select id="char-type" name="char-type" required>
+            <option value="">Selecciona tipo</option>
+            <option value="protagonista">Protagonista</option>
+            <option value="antagonista">Antagonista</option>
+            <option value="secundario">Secundario</option>
+        </select><br><br>
+
+        <label for="char-appearance">Apariciones (separa por comas):</label><br>
+        <input type="text" id="char-appearance" name="char-appearance" placeholder="Ej. RE1, RE3"><br><br>
+
+        <label for="char-is-bow">¿Es Arma Biológica (BOW)?</label><br>
+        <input type="checkbox" id="char-is-bow" name="char-is-bow"><br><br>
+
+        <button type="submit" id="save-btn">Guardar</button>
+        <button type="button" id="update-btn" disabled>Actualizar</button>
+        <button type="button" id="delete-btn" disabled>Borrar</button>
+        <input type="hidden" id="char-id">
+    </form>
+
+    <div id="crud-results"></div>
+</div>  
+
+    <div class="box">
+    <h3>Operaciones con Cadenas</h3>
+    <p><strong>Escribe tu texto:</strong></p>
+    <input type="text" id="user-input" placeholder="Ingresa tu texto aquí..." style="width: 80%;">
+    <button id="apply-operations-btn">Aplicar Operaciones</button>
+    <ul id="string-operations-results">
+    <p><strong>Ejemplo: "jill valentine"</strong></p>
+    <ul id="string-operations-results">
+        <!-- Aquí se insertarán los resultados -->
+    </ul>
+
+        <!-- Aquí se insertarán los resultados -->
+    </ul>
+</div>
+</div>
 
     <footer>
         <p>&copy; 2025 - Lore completo de Resident Evil</p>
@@ -651,16 +719,6 @@
         <p><a href="https://www.bing.com/ck/a?!&&p=037645cdb431a122091a02b8d21e22d6ca725c74f7e2ff798b4ca0ad4dadca47JmltdHM9MTc0NDQxNjAwMA&ptn=3&ver=2&hsh=4&fclid=3ab7a53f-26c4-6289-0149-b01427e163c3&psq=fandom+resident+evil&u=a1aHR0cHM6Ly9yZXNpZGVudGV2aWwuZmFuZG9tLmNvbS93aWtpL1Jlc2lkZW50X0V2aWxfV2lraQ&ntb=1">pagina de resident evil</a></p>
     </footer>
     <script src="main.js"></script>
-    <script>
-    // Demostración de funciones de cadena
-    const nombre = "jill valentine";
-    console.log(nombre.toUpperCase());     // "JILL VALENTINE"
-    console.log(nombre.toLowerCase());     // "jill valentine"
-    console.log(nombre.charAt(0));         // "j"
-    console.log(nombre.substring(0, 5));   // "jill "
-    console.log(nombre.split(" "));       // ["jill", "valentine"]
-    console.log("Hola".concat(" mundo"));  // "Hola mundo"
-</script>
 
 </body>  
 </html>
